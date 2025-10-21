@@ -3,7 +3,7 @@
 > **IMPORTANT**
 > This is a community maintained repository, support is not guaranteed.
 
-Docker container and compose setup to run a [Tangled](https://tangled.sh) knot
+Docker container and compose setup to run a [Tangled](https://tangled.org) knot
 and host your own repository data.
 
 ## Pre-built Images

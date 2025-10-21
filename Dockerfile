@@ -6,7 +6,7 @@ arg TAG='v1.10.0-alpha'
 
 workdir /app
 run apk add git gcc musl-dev
-run git clone -b ${TAG} https://tangled.sh/@tangled.sh/core .
+run git clone -b ${TAG} https://tangled.org/@tangled.org/core .
 run go build -o /usr/bin/knot -ldflags '-s -w -extldflags "-static"' ./cmd/knot
 
 from alpine:edge
@@ -16,8 +16,8 @@ expose 22
 label org.opencontainers.image.title='knot'
 label org.opencontainers.image.description='data server for tangled'
 label org.opencontainers.image.source='https://github.com/savely-krasovsky/knot-docker'
-label org.opencontainers.image.url='https://tangled.sh'
-label org.opencontainers.image.vendor='tangled.sh'
+label org.opencontainers.image.url='https://tangled.org'
+label org.opencontainers.image.vendor='tangled.org'
 label org.opencontainers.image.licenses='MIT'
 
 copy rootfs .
