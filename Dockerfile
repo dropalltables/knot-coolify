@@ -2,7 +2,7 @@ from golang:1.24-alpine as builder
 env KNOT_REPO_SCAN_PATH=/home/git/repositories
 env CGO_ENABLED=1
 
-arg TAG='v1.10.0-alpha'
+arg TAG='v1.11.0-alpha'
 
 workdir /app
 run apk add git gcc musl-dev
