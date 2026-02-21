@@ -1,0 +1,8 @@
+#!/command/with-contenv sh
+chown -R git:git /home/git/repositories
+chown -R git:git /app
+```
+
+**`rootfs/etc/s6-overlay/s6-rc.d/knotserver/dependencies`**
+```
+fix-repo-perms
