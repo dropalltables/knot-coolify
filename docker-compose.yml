@@ -11,6 +11,7 @@ services:
       - ./keys:/etc/ssh/keys
       - ./repositories:/home/git/repositories
       - ./server:/app
+      - ./motd:/home/git/motd
     ports:
       - "5555:5555"
       - "2222:22"
@@ -31,3 +32,6 @@ services:
       - caddy_data:/data
     restart: always
     profiles: ["caddy"]
+
+volumes:
+  caddy_data:
