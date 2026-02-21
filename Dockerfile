@@ -38,7 +38,7 @@ RUN chmod 755 /etc && \
 
 # Remove duplicate/conflicting sshd AuthorizedKeysCommand config
 # tangled_sshd.conf already has the correct one via keys-wrapper
-RUN rm /etc/ssh/sshd_config.d/authorized_keys_command.conf
+RUN rm -f /etc/ssh/sshd_config.d/authorized_keys_command.conf
 
 # Create git user and directories
 RUN groupadd -g $GID -f git && \
